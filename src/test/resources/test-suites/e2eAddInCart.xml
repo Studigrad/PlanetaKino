@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="e2eAddInCart">
+    <test name="test1">
+        <parameter name="email" value="ilya@gmail.com"/>
+        <parameter name="password" value="12345678"/>
+        <classes>
+            <class name="tests.FindRestaurantTest" />
+        </classes>
+    </test>
+</suite>

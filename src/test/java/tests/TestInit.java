@@ -1,7 +1,9 @@
 package tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
@@ -18,13 +20,14 @@ public abstract class TestInit {
 //        WebDriverManager.chromedriver().setup();
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("headless");
-        Capabilities cap = new ChromeOptions();
-        String urlFormat = "http://%s:4444/wd/hub";
-        String hubHost = "192.168.68.161";
-        String url = String.format(urlFormat,hubHost);
-        driver.set(new RemoteWebDriver(new URL(url),cap));
-        getDriver().get("https://eatstreet.com");
-
+//        Capabilities cap = new ChromeOptions();
+//        String urlFormat = "http://%s:4444/wd/hub";
+//        String hubHost = "192.168.68.161";
+//        String url = String.format(urlFormat,hubHost);
+//        driver.set(new RemoteWebDriver(new URL(url),cap));
+        WebDriverManager.chromedriver().setup();
+        driver.set(new ChromeDriver());
+        getDriver().get("https://planetakino.ua/");
     }
     public WebDriver getDriver(){
         return driver.get();

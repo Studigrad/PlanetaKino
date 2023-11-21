@@ -17,10 +17,13 @@ public class HomePage extends BasePage {
         return findsByXpath("//div[@class='movie-block__poster-wr']");
 
     }
-
     public WebElement getElementFromFilmList(){
         return filmlist().get(generateRandomNumber(0, filmlist().size()));
     }
+   public FilmPage clickAtElementList(){
+        getElementFromFilmList().click();
+        return new FilmPage();
+   }
 
 
 

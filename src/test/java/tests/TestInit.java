@@ -27,6 +27,7 @@ public abstract class TestInit {
 //        driver.set(new RemoteWebDriver(new URL(url),cap));
         WebDriverManager.chromedriver().setup();
         driver.set(new ChromeDriver());
+        getDriver().manage().window().maximize();
         getDriver().get("https://planetakino.ua/");
     }
     public WebDriver getDriver(){

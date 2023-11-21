@@ -19,7 +19,7 @@ public class SchedulePage extends BasePage {
     public WebElement glasses(){
         return findByXpath("//img[@class='img-responsive']");
     }
-    public WebElement pageDown(){
+    public WebElement pageDownBtn(){
         return findByXpath("//div[@class='title'][text()='УСЕ ПРО НАШІ 3D-ОКУЛЯРИ']");
     }
     public SchedulePage openUp(){

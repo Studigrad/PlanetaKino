@@ -30,10 +30,13 @@ public class SchedulePage extends BasePage {
         schedule().click();
         return this;
     }
-    public SchedulePage glassesInfo(){
+//    public SchedulePage glassesInfo(){
+//        glasses().click();
+//        return this;
+//    }
+public SchedulePage glassesInfo(){
         glasses().click();
         return this;
-    }
-
+}
 
 }

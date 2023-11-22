@@ -26,10 +26,10 @@ public class SignInPage extends BasePage {
         return findByXpath("//button[@name='login-button']");
     }
 
-    public void login(){
+    public void login(String name, String password ){
         signInBtnOnMainPage().click();
-        loginFieldInput().sendKeys("qaengenering@gmail.com");
-        passwordFieldInput().sendKeys("QA123456$");
+        loginFieldInput().sendKeys(name);
+        passwordFieldInput().sendKeys(password);
         loginBtn().click();
     }
 

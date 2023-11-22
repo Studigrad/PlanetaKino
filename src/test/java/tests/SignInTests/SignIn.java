@@ -10,7 +10,7 @@ public class SignIn extends TestInit {
     public void signInPositive() {
         SignInPage signIn = new SignInPage(getDriver());
 
-        signIn.login();
+        signIn.login("","");
 
         Assert.assertTrue(signIn.findByXpath("//div[text()='q']").isDisplayed());
 

@@ -25,6 +25,10 @@ public class HomePage extends BasePage {
         return new FilmPage();
    }
 
+   public HomePage checkFilmSecondSideCard(){
+        return this;
+   }
+
 
 
 

@@ -25,7 +25,8 @@ public abstract class TestInit {
 //        String hubHost = "192.168.68.161";
 //        String url = String.format(urlFormat,hubHost);
 //        driver.set(new RemoteWebDriver(new URL(url),cap));
-        WebDriverManager.chromedriver().setup();
+//        WebDriverManager.chromedriver().setup();
+//        driver.get().manage().window().maximize();
         driver.set(new ChromeDriver());
         getDriver().manage().window().maximize();
         getDriver().get("https://planetakino.ua/");

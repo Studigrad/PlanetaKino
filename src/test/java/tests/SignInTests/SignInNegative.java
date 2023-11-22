@@ -5,14 +5,15 @@ import org.testng.annotations.Test;
 import pageObject.pages.SignInPage.SignInPage;
 import tests.TestInit;
 
-public class SignIn extends TestInit {
+public class SignInNegative extends TestInit {
+
     @Test
-    public void signInPositive() {
+    public void SignInWithWrongEmail() {
         SignInPage signIn = new SignInPage(getDriver());
 
-        signIn.login();
+        signIn.wrongLogin();
 
-        Assert.assertTrue(signIn.findByXpath("//div[text()='q']").isDisplayed());
+        Assert.assertTrue(signIn.warningIncorectDatas().isDisplayed());
 
     }
 }

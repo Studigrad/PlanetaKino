@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageObject.BasePage;
 
+import javax.swing.*;
 import java.util.List;
 import java.util.Optional;
 import java.util.Random;
@@ -25,9 +26,11 @@ public class HomePage extends BasePage {
         return new FilmPage();
    }
 
-   public HomePage checkFilmSecondSideCard(){
-        return this;
-   }
+//   public HomePage checkFilmSecondSideCard(){
+//        Action action = new Action();
+//        getElementFromFilmList();
+//        return this;
+//   }
 
 
 

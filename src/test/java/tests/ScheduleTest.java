@@ -12,7 +12,6 @@ import java.time.Duration;
 import java.util.List;
 
 public class ScheduleTest extends TestInit {
-
     @Test
     public void scheduleOpen(){
         SchedulePage sch = new SchedulePage(getDriver());
@@ -56,7 +55,7 @@ public class ScheduleTest extends TestInit {
         sch.allButtons();
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(5));
         List<WebElement> visibleElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//section[@class='movie-info flex-column']")));
-        Assert.assertTrue((visibleElements.size()) > 0);
+        Assert.assertTrue(!visibleElements.isEmpty());
     }
     @Test
     public void allTime(){
@@ -71,7 +70,7 @@ public class ScheduleTest extends TestInit {
         sch.periodTime();
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(5));
         List<WebElement> visibleElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//section[@class='movie-info flex-column']")));
-        Assert.assertTrue((visibleElements.size()) > 0);
+        Assert.assertTrue(!visibleElements.isEmpty());
     }
 }
 

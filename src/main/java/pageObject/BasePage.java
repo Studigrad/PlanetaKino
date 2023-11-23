@@ -25,7 +25,7 @@ public class BasePage {
     }
 
     public WebElement findByXpath(String path) {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(path)));
+        return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(path)));
     }
 
     public List<WebElement> findsByXpath(String path) {
@@ -38,7 +38,7 @@ public class BasePage {
     }
 
     public WebElement findByCSS(String path) {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(path)));
+        return wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(path)));
     }
 
     public List<WebElement> findsByCSS(String path) {

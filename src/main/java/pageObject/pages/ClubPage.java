@@ -16,7 +16,7 @@ public class ClubPage extends BasePage {
     }
     public WebElement getELPSHelp(){return findByXpath("//a[@class='container__link'][text()='Допомога']");
     }
-    public WebElement getELPSentEmail(){return findByXpath("");
+    public WebElement getELPSentEmail(){return findByXpath("//a[@class=\"container__link container__link_info\"]");
     }
     public WebElement getELPSGooglePlay(){return findByXpath("//a[@target='_blank'][@class='container__link']");
     }

@@ -10,9 +10,9 @@ public class SignIn extends TestInit {
     public void signInPositive() {
         SignInPage signIn = new SignInPage(getDriver());
 
-        signIn.login();
+        signIn.login("qaengenering@gmail.com","QA123456$");
 
-        Assert.assertTrue(signIn.findByXpath("//div[text()='q']").isDisplayed());
+        Assert.assertTrue(signIn.userAvatar().isDisplayed());
 
-    }
+    }////span[text()='Ми чули, тобі потрібен новий пароль']
 }

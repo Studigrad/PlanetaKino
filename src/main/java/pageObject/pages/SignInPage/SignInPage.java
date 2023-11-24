@@ -1,6 +1,5 @@
 package pageObject.pages.SignInPage;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageObject.BasePage;
@@ -38,7 +37,18 @@ public class SignInPage extends BasePage {
         loginBtn().click();
     }
 
+<<<<<<< HEAD
+    public void wrongLogin(){
+        signInBtnOnMainPage().click();
+        emailFieldInput().sendKeys("qaengenering@gmail.commmm");
+        passwordFieldInput().sendKeys("QA123456$");
+        loginBtn().click();
+    }
+
+    public WebElement warningIncorectDatas(){
+=======
     public WebElement warningIncorectCredetians() {
+>>>>>>> 51210da6118c4770427547dd0e27a91569fdaad9
         return findByXpath("//p[@class=\"help-block help-block-error login-error-event\"]");
     }
 

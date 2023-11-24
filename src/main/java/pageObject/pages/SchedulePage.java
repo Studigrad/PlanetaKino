@@ -1,6 +1,5 @@
 package pageObject.pages;
 
-import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import pageObject.BasePage;
@@ -110,6 +109,7 @@ public class SchedulePage extends BasePage {
         }
         return this;
     }
+
     private boolean isElementClickable(WebElement button) {
         try {
             button.click();
@@ -118,6 +118,7 @@ public class SchedulePage extends BasePage {
             return false;
         }
     }
+
     public SchedulePage periodTime() throws InterruptedException {
         List<WebElement> checkboxes = driver.findElements(By.xpath("//label[@class='mat-radio-label']"));
         Actions actions = new Actions(driver);
@@ -129,7 +130,7 @@ public class SchedulePage extends BasePage {
         }
         return this;
     }
-    }
+}
 
 
 

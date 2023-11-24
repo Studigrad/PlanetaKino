@@ -1,6 +1,5 @@
 package pageObject.pages.SignInPage;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageObject.BasePage;
@@ -33,8 +32,6 @@ public class SignInPage extends BasePage {
         passwordFieldInput().sendKeys("QA123456$");
         loginBtn().click();
     }
-
-
 
     public void wrongLogin(){
         signInBtnOnMainPage().click();

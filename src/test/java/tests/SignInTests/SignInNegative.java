@@ -1,5 +1,6 @@
 package tests.SignInTests;
 
+import jdk.jfr.Percentage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObject.pages.SignInPage.SignInPage;
@@ -11,9 +12,9 @@ public class SignInNegative extends TestInit {
     public void SignInWithWrongEmail() {
         SignInPage signIn = new SignInPage(getDriver());
 
-        signIn.wrongLogin();
+        signIn.login("qaengenering@gmail.comM","QA123456%");
 
-        Assert.assertTrue(signIn.warningIncorectDatas().isDisplayed());
+        Assert.assertTrue(signIn.warningIncorectCredetians().isDisplayed());
 
     }
 }

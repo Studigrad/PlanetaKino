@@ -49,7 +49,6 @@ public abstract class TestInit {
                     + Arrays.toString(testResult.getParameters()) +  ".jpg"));
         }
     }
-
     @AfterTest
     public void closeBrowser(){
         getDriver().quit();

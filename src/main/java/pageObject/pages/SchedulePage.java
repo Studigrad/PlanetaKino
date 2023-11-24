@@ -130,7 +130,7 @@ public class SchedulePage extends BasePage {
         }
         return this;
     }
-    }
+}
 
 
 

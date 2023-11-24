@@ -24,7 +24,7 @@ public abstract class TestInit {
     public ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     @BeforeTest
     public void openBrowser() throws MalformedURLException {
-        //System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 //        WebDriverManager.chromedriver().setup();
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("headless");
@@ -33,9 +33,7 @@ public abstract class TestInit {
 //        String hubHost = "192.168.68.161";
 //        String url = String.format(urlFormat,hubHost);
 //        driver.set(new RemoteWebDriver(new URL(url),cap));
-
         WebDriverManager.chromedriver().setup();
-
         driver.set(new ChromeDriver());
         getDriver().manage().window().maximize();
         getDriver().get("https://planetakino.ua/");

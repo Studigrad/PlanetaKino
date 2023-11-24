@@ -65,4 +65,15 @@ public class Header extends BasePage {
     public WebElement getContactsBtn(){
         return findByXpath("//ul[@class=\"h-m__desktop\"]/li[8]");
     }
+    public WebElement getEllipsesBtn() {return findByXpath("//li/a[@class='h-m__item-link d-toggle']");}
+    public WebElement getClubBtn() {return findByXpath("//li/a[contains(text(),'Клуб')]");}
+    public WebElement getCinemas() {return findByXpath("//li/a[contains(text(),'Кінотеатри')]");}
+    public WebElement getHelpAnswersQuestions() {return findByXpath("//li/a[contains(text(),'Допомога. Відповіді на запитання')]");}
+    public WebElement getDiscount() {return findByXpath("//li/a[contains(text(),'Знижки')]");}
+    public WebElement getGiftCertificates() {return findByXpath("//li/a[contains(text(),'Подарункові сертифікати')]");}
+    public WebElement getNews() {return findByXpath("//li/a[contains(text(),'Новини')]");}
+    public WebElement getAboutPK() {return findByXpath("//li/a[contains(text(),'Про Планету Кіно')]");}
+    public WebElement getJobWithUs() {return findByXpath("//li/a[contains(text(),'Робота у нас')]");}
+
 }
+

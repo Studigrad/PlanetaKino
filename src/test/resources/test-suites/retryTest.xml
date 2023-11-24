@@ -1,0 +1,10 @@
+<suite name="My Test Suite">
+    <listeners>
+        <listener class-name="tests.components.RetryListener"/>
+    </listeners>
+    <test name="My Test">
+        <classes>
+            <class name="tests.TestExample"/>
+        </classes>
+    </test>
+</suite>
